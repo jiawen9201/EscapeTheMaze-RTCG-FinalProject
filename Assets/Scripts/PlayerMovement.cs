@@ -31,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    public GameObject theModel;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -71,6 +73,24 @@ public class PlayerMovement : MonoBehaviour
             Jump();
 
             Invoke(nameof(ResetJump), jumpCooldown);
+        }
+
+        // make animation
+        if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            theModel.GetComponent<Animator>().Play("Run");
+        }
+        else if(Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            theModel.GetComponent<Animator>().Play("Stand");
+        }
+        else if(Input.GetKeyDown("w") || Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d"))
+        {
+            theModel.GetComponent<Animator>().Play("Run");
+        }
+        else if(Input.GetKeyUp("w") || Input.GetKeyUp("a") || Input.GetKeyUp("s") || Input.GetKeyUp("d"))
+        {
+            theModel.GetComponent<Animator>().Play("Stand");
         }
     }
 

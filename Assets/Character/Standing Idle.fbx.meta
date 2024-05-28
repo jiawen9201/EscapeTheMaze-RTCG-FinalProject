@@ -6,7 +6,67 @@ ModelImporter:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: arms_d
+    second: {fileID: 2800000, guid: 951ca8c91f30e434bada9455590801a4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: backpack_d
+    second: {fileID: 2800000, guid: 55a6fe8c50bd68f4096cab14bed67297, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: body_d
+    second: {fileID: 2800000, guid: e652bf12528371d4d940499797397df3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: boots_d
+    second: {fileID: 2800000, guid: 91fc31f768216da4cbad87ec4028fdb9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: eye_d
+    second: {fileID: 2800000, guid: 7d9b33fb8764bf541b94ffc4783f7d64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hair_d
+    second: {fileID: 2800000, guid: 34b5187fab2ce14498db24127d66bc3d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hat_d
+    second: {fileID: 2800000, guid: 55dd296821956894da697a9569c44868, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: head_d
+    second: {fileID: 2800000, guid: bd512a04db66959469e05435e39f20e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jeans_d
+    second: {fileID: 2800000, guid: ed7a0e13635e20c4293eb9a8aee43df8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lashes_d
+    second: {fileID: 2800000, guid: 52fada83d1b2fae4f8edafdd05492622, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mouth_d
+    second: {fileID: 2800000, guid: f68305bbc63d73941b38c2c3f60b1791, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: shirt_d
+    second: {fileID: 2800000, guid: 6c4eac7f152ba0549a39e3885ee6f558, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
