@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class LayerCulling : MonoBehaviour
 { 
-    public int cube = 15;
-    public int sphere = 10;
+    public float cube;
+    public float sphere;
     // Update is called once per frame
     void Update()
     {
