@@ -18,6 +18,6 @@ public class GetTimeToEscape : MonoBehaviour
         {
             PlayerPrefs.SetInt("bestscore", PlayerPrefs.GetInt("timetaken"));
         }
-        timeTaken.text = "Time Taken to escape: " + PlayerPrefs.GetInt("timetaken".ToString()) + " seconds";
+        timeTaken.text = "Time Taken to escape: " + PlayerPrefs.GetInt("timetaken").ToString() + " seconds";
     }
 }

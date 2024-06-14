@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoseScene.unity
     guid: af225173b2502e2468aa9115243cd089
+  - enabled: 1
+    path: Assets/Scenes/BestScoreScene.unity
+    guid: 7659b68ebfd625d419446ce9297718b7
   m_configObjects: {}

@@ -12,6 +12,6 @@ public class GetBestScore : MonoBehaviour
     {   if (PlayerPrefs.GetInt("bestscore") == 0)
             bestScore.text = "No record";
         else
-            bestScore.text = PlayerPrefs.GetInt("bestscore".ToString()) + " seconds";
+            bestScore.text = PlayerPrefs.GetInt("bestscore").ToString() + " seconds";
     }
 }
