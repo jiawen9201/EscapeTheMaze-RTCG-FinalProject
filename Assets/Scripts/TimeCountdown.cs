@@ -26,7 +26,7 @@ public class TimeCountdown : MonoBehaviour
             if (currentTime == 1)
                 unit = "second";
 
-            if (currentTime == 10)
+            if (currentTime <= 10)
                 timeText.color = new Color (1, 0, 0, 1f);
             timeText.text = "Time remaining: " + currentTime.ToString() + " " + unit;
             yield return new WaitForSeconds(1f);
@@ -35,6 +35,7 @@ public class TimeCountdown : MonoBehaviour
             // time out -> lose game -> call lose game scene
             if (currentTime == 0)
             {
+                Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene("LoseScene");
             }
         }

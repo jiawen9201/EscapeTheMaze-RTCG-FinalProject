@@ -7,6 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     public void MainMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("MainMenuScene");
         Debug.Log("Main Menu");
     }
@@ -17,6 +18,7 @@ public class ChangeScene : MonoBehaviour
     }
     public void DisplayTutorial()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("TutorialScene");
         Debug.Log("Tutorial");
     }
