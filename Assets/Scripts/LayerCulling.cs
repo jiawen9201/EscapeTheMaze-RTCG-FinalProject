@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class LayerCulling : MonoBehaviour
 { 
-    public float cube;
-    public float sphere;
+    public float hint;
     // Update is called once per frame
     void Update()
     {
         Camera camera = GetComponent<Camera>();
         float[] distances = new float[32];
-        distances[6] = cube;
-        distances[7] = sphere;
+        distances[6] = hint;
         camera.layerCullDistances = distances;
     }
 }

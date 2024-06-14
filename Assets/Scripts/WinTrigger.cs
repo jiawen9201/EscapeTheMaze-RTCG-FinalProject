@@ -1,15 +1,27 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class WinTrigger : MonoBehaviour
 {
+    TimeCountdown time;
+
+    void Update()
+    {
+        time = GameObject.Find("GameManager").GetComponent<TimeCountdown>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Collided with: " + other.gameObject.name);
 
         if (other.CompareTag("Player"))
         {
-            Win();
+            if (time.currentTime > 0)
+            {
+                PlayerPrefs.SetInt("timetaken", (int)time.duration - (int)time.currentTime);
+                Win();
+            }
         }
     }
 

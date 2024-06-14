@@ -25,8 +25,11 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject theModel;
 
+    public Transform playerOriginalPosition; // to get the starting position
+
     private void Start()
     {
+        playerOriginalPosition = orientation;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
     }
