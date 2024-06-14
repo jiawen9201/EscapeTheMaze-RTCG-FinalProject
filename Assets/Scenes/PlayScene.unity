@@ -3039,7 +3039,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1067853811198812, guid: f5a1bb1bf8641274c88db4c73f943ae4, type: 3}
       propertyPath: m_Name
-      value: book
+      value: hint
       objectReference: {fileID: 0}
     - target: {fileID: 1067853811198812, guid: f5a1bb1bf8641274c88db4c73f943ae4, type: 3}
       propertyPath: m_Layer
