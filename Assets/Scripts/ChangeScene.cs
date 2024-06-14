@@ -22,6 +22,12 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("TutorialScene");
         Debug.Log("Tutorial");
     }
+    public void BestScore()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene("BestScoreScene");
+        Debug.Log("Best Score");
+    }
     public void QuitGame()
     {
         #if UNITY_EDITOR
