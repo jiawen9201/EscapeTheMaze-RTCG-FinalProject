@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/WinScene.unity
     guid: c4dec702ebb8eb143b869f240f904a72
   - enabled: 1
-    path: Assets/Scenes/Tutorial page.unity
+    path: Assets/Scenes/TutorialScene.unity
     guid: 83e24826fdbded040bae5c6e9021f8ab
   - enabled: 1
     path: Assets/Scenes/PlayScene.unity
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenuScene.unity
     guid: 17aa5ccce319d32429acc0adbeee231f
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: af225173b2502e2468aa9115243cd089
   m_configObjects: {}

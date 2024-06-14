@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
 
@@ -24,11 +25,18 @@ public class TimeCountdown : MonoBehaviour
         {
             if (currentTime == 1)
                 unit = "second";
+
             if (currentTime == 10)
                 timeText.color = new Color (1, 0, 0, 1f);
             timeText.text = "Time remaining: " + currentTime.ToString() + " " + unit;
             yield return new WaitForSeconds(1f);
             currentTime -= 1;
+
+            // time out -> lose game -> call lose game scene
+            if (currentTime == 0)
+            {
+                SceneManager.LoadScene("LoseScene");
+            }
         }
     }
 }

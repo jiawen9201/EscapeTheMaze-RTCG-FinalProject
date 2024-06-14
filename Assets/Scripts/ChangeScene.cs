@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class QuitGame : MonoBehaviour
+public class ChangeScene : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void MainMenu()
     {
-        
+        SceneManager.LoadScene("MainMenuScene");
+        Debug.Log("Main Menu");
     }
-
-    // Update is called once per frame
-    void Update()
+    void Play()
     {
-        
+        SceneManager.LoadScene("PlayScene");
+        Debug.Log("Play");
+    }
+    void DisplayTutorial()
+    {
+        SceneManager.LoadScene("TutorialScene");
+        Debug.Log("Tutorial");
+    }
+    void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit");
     }
 }

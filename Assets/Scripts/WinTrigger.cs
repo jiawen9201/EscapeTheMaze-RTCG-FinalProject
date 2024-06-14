@@ -20,13 +20,8 @@ public class WinTrigger : MonoBehaviour
             if (time.currentTime > 0)
             {
                 PlayerPrefs.SetInt("timetaken", (int)time.duration - (int)time.currentTime);
-                Win();
+                SceneManager.LoadScene("WinScene");
             }
         }
-    }
-
-    private void Win()
-    {        
-        SceneManager.LoadScene("WinScene");
     }
 }
