@@ -5,24 +5,28 @@ using UnityEngine;
 
 public class ChangeScene : MonoBehaviour
 {
-    void MainMenu()
+    public void MainMenu()
     {
         SceneManager.LoadScene("MainMenuScene");
         Debug.Log("Main Menu");
     }
-    void Play()
+    public void Play()
     {
         SceneManager.LoadScene("PlayScene");
         Debug.Log("Play");
     }
-    void DisplayTutorial()
+    public void DisplayTutorial()
     {
         SceneManager.LoadScene("TutorialScene");
         Debug.Log("Tutorial");
     }
-    void QuitGame()
+    public void QuitGame()
     {
-        Application.Quit();
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
         Debug.Log("Quit");
     }
 }
