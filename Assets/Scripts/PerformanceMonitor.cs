@@ -12,6 +12,7 @@ public class PerformanceMonitor : MonoBehaviour
     public TextMeshProUGUI vertsText;
     public GameObject statisticWindow;
     public GameObject toggler;
+    public static bool statisticIsOff;
 
     ProfilerRecorder trianglesRecorder;
     ProfilerRecorder verticesRecorder;
@@ -24,17 +25,26 @@ public class PerformanceMonitor : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown("o"))
+        {
+            statisticIsOff = !statisticIsOff;  
+        }
+        Statistic();
+    }
+
+    void Statistic()
+    {
         if (trianglesRecorder.Valid)
             trisText.text = "Triangles: " + trianglesRecorder.LastValue.ToString();
         if (verticesRecorder.Valid)
             vertsText.text = "Vertices: " + verticesRecorder.LastValue.ToString();
 
-        if (Input.GetKeyDown("g"))
+        if (!statisticIsOff)
         {
             toggler.GetComponent<Toggle>().isOn = true;
             statisticWindow.SetActive(true);
         }
-        else if (Input.GetKeyDown("h"))
+        else
         {
             toggler.GetComponent<Toggle>().isOn = false;
             statisticWindow.SetActive(false);
