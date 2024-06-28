@@ -33,6 +33,7 @@ public class HintTrigger : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         collide = false;
+        hintText.text = "";
     }
 
     void checkInteraction()
@@ -68,10 +69,6 @@ public class HintTrigger : MonoBehaviour
         {
             hintText.text = "Click \"Z\" to view hint";
             checkInteraction();
-        }
-        else if (collide == false)
-        {
-            hintText.text = "";
         }
     }
 
