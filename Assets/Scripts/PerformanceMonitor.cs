@@ -10,7 +10,7 @@ public class PerformanceMonitor : MonoBehaviour
 {
     public TextMeshProUGUI trisText;
     public TextMeshProUGUI vertsText;
-    public GameObject fpsWindow;
+    public GameObject statisticWindow;
     public GameObject toggler;
 
     ProfilerRecorder trianglesRecorder;
@@ -24,24 +24,20 @@ public class PerformanceMonitor : MonoBehaviour
 
     void Update()
     {
-        var sb1 = new StringBuilder(500);
-        var sb2 = new StringBuilder(500);
         if (trianglesRecorder.Valid)
-            sb1.AppendLine($"Triangles: {trianglesRecorder.LastValue}");
+            trisText.text = "Triangles: " + trianglesRecorder.LastValue.ToString();
         if (verticesRecorder.Valid)
-            sb2.AppendLine($"Vertices: {verticesRecorder.LastValue}");
-        trisText.text = sb1.ToString();
-        vertsText.text = sb2.ToString();
+            vertsText.text = "Vertices: " + verticesRecorder.LastValue.ToString();
 
         if (Input.GetKeyDown("z"))
         {
             toggler.GetComponent<Toggle>().isOn = true;
-            fpsWindow.SetActive(true);
+            statisticWindow.SetActive(true);
         }
         else if (Input.GetKeyDown("x"))
         {
             toggler.GetComponent<Toggle>().isOn = false;
-            fpsWindow.SetActive(false);
+            statisticWindow.SetActive(false);
         }
     }
 }
