@@ -29,12 +29,12 @@ public class PerformanceMonitor : MonoBehaviour
         if (verticesRecorder.Valid)
             vertsText.text = "Vertices: " + verticesRecorder.LastValue.ToString();
 
-        if (Input.GetKeyDown("z"))
+        if (Input.GetKeyDown("g"))
         {
             toggler.GetComponent<Toggle>().isOn = true;
             statisticWindow.SetActive(true);
         }
-        else if (Input.GetKeyDown("x"))
+        else if (Input.GetKeyDown("h"))
         {
             toggler.GetComponent<Toggle>().isOn = false;
             statisticWindow.SetActive(false);
