@@ -3399,6 +3399,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4290439104894856, guid: f5a1bb1bf8641274c88db4c73f943ae4, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 65695522028478050, guid: f5a1bb1bf8641274c88db4c73f943ae4, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -8756,7 +8760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &278955436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10865,7 +10869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 0
+  clue: This is the dead end
 --- !u!65 &353463328
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11789,7 +11793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &411890751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14111,7 +14115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 0
+  clue: This is the dead end
 --- !u!65 &496989272
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14172,7 +14176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &500755216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16555,7 +16559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 0
+  clue: One door is connected to the exit
 --- !u!65 &612802831
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19378,7 +19382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &680388026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23206,7 +23210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 0
+  clue: This is the dead end
 --- !u!65 &820654574
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23625,7 +23629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: Two of the doors are connected to the exit
 --- !u!65 &841258615
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24445,7 +24449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 0
+  clue: This is the dead end
 --- !u!65 &877036298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27712,7 +27716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &997556652
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28806,7 +28810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &1039796685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29297,7 +29301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &1049612347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29762,7 +29766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &1063595416
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32245,7 +32249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &1153992604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33470,7 +33474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 0
+  clue: This is the dead end
 --- !u!65 &1209811448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40137,7 +40141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &1449120433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41337,7 +41341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 0
+  clue: This is the dead end
 --- !u!65 &1487733593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44737,7 +44741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 0
+  clue: This is the dead end
 --- !u!65 &1606005300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46254,7 +46258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &1687523205
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46491,7 +46495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: Both doors are connected to the exit
 --- !u!65 &1699037132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50165,7 +50169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &1839986556
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52231,7 +52235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: All the doors are connected to the exit
 --- !u!65 &1904200147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52930,7 +52934,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.2561922, y: -5.567088, z: 16.078995}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1243045807}
   - {fileID: 1099351882}
@@ -54145,7 +54149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 0
+  clue: This is the dead end
 --- !u!65 &1972084511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54488,7 +54492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: Two of the doors are connected to the exit
 --- !u!65 &1988458464
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55502,7 +55506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: Two of the doors are connected to the exit
 --- !u!65 &2020375567
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55989,7 +55993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 0
+  clue: This is the dead end
 --- !u!65 &2033211025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56349,7 +56353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 0
+  clue: This is the dead end
 --- !u!65 &2043259491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58040,7 +58044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 295577501}
   trapOrClue: {fileID: 1896324074}
-  correctPath: 1
+  clue: One door is connected to the exit
 --- !u!65 &2107753641
 BoxCollider:
   m_ObjectHideFlags: 0

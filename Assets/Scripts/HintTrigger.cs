@@ -8,7 +8,7 @@ public class HintTrigger : MonoBehaviour
     public TextMeshProUGUI hintText;
     public TextMeshProUGUI trapOrClue;
     bool collide = false;
-    public bool correctPath;
+    public string clue;
     PlayerMovement playerOriginalPosition; 
     GameObject player;
 
@@ -45,14 +45,7 @@ public class HintTrigger : MonoBehaviour
             // 0 is clue, 1 is trap
             if (n == 0)
             {
-                if (correctPath == true)
-                {
-                    StartCoroutine(displayTrapOrClue(3, "Clue: This is the CORRECT path"));
-                }
-                else
-                {
-                    StartCoroutine(displayTrapOrClue(3, "Clue: This is the WRONG path"));
-                }
+                StartCoroutine(displayTrapOrClue(3, "Clue: " + clue));
             }
             else
             {
