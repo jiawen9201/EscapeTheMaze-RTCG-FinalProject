@@ -12,13 +12,14 @@ public class PerformanceMonitor : MonoBehaviour
     public TextMeshProUGUI vertsText;
     public GameObject statisticWindow;
     public GameObject toggler;
-    public static bool statisticIsOff;
+    public static bool statisticIsOn;
 
     ProfilerRecorder trianglesRecorder;
     ProfilerRecorder verticesRecorder;
 
     void Start()
     {
+        statisticIsOn = true;
         trianglesRecorder = ProfilerRecorder.StartNew(ProfilerCategory.Render, "Triangles Count");
         verticesRecorder = ProfilerRecorder.StartNew(ProfilerCategory.Render, "Vertices Count");
     }
@@ -27,7 +28,7 @@ public class PerformanceMonitor : MonoBehaviour
     {
         if (Input.GetKeyDown("o"))
         {
-            statisticIsOff = !statisticIsOff;  
+            statisticIsOn = !statisticIsOn;  
         }
         Statistic();
     }
@@ -39,7 +40,7 @@ public class PerformanceMonitor : MonoBehaviour
         if (verticesRecorder.Valid)
             vertsText.text = "Vertices: " + verticesRecorder.LastValue.ToString();
 
-        if (!statisticIsOff)
+        if (statisticIsOn)
         {
             toggler.GetComponent<Toggle>().isOn = true;
             statisticWindow.SetActive(true);

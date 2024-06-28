@@ -6,20 +6,25 @@ using UnityEngine.UI;
 public class OnOffPortalCulling : MonoBehaviour
 {
     public GameObject toggler;
-    public static bool cullingIsOff;
+    public static bool cullingIsOn;
+
+    void Start()
+    {
+        cullingIsOn = true;
+    }
 
     void Update()
     {
         if (Input.GetKeyDown("p"))
         {
-            cullingIsOff = !cullingIsOff;  
+            cullingIsOn = !cullingIsOn;  
         }
         Culling();
     }
 
     void Culling()
     {
-        if (!cullingIsOff)
+        if (cullingIsOn)
         {
             toggler.GetComponent<Toggle>().isOn = true;
             GetComponent<Camera>().useOcclusionCulling = true;

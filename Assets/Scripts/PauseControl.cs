@@ -8,7 +8,6 @@ public class PauseControl : MonoBehaviour
 {
     public static bool gameIsPaused;
     public TextMeshProUGUI text; 
-    public GameObject statisticWindow;
 
     void Update()
     {
@@ -20,7 +19,6 @@ public class PauseControl : MonoBehaviour
         else if (Input.GetKeyDown("m"))
         {
             Cursor.lockState = CursorLockMode.None;
-            statisticWindow.SetActive(false);
             SceneManager.LoadScene("MainMenuScene");
         }
     }
