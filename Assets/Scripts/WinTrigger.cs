@@ -6,7 +6,7 @@ public class WinTrigger : MonoBehaviour
 {
     TimeCountdown time;
 
-    void Update()
+    void Start()
     {
         time = GameObject.Find("GameManager").GetComponent<TimeCountdown>();
     }
